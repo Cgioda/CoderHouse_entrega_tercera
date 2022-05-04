@@ -18,7 +18,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   background-color: #0a4275;
   font-weight: lighter;
@@ -37,9 +37,30 @@ a:hover {
     transform: translateX(0);
   }
 }
-.estilo_form {
+/*extend*/
+.estilo_form, .estilo_pag_alt {
   background-color: #0a4275;
   color: white;
+}
+
+.estilo_pag_alt {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+/*mixing*/
+.fondo_registro_pag_alt {
+  width: 720px;
+  height: 250px;
+  background-color: #0a4275;
+}
+
+.boton-facebook {
+  color: #55acee;
+}
+
+.boton-mail {
+  color: black;
 }
 
 /*# sourceMappingURL=estilos.css.map */

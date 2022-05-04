@@ -14,7 +14,7 @@ section{
 a{
     text-decoration: none;
         &:hover{
-            font-size: 20px;
+            font-size: 18px;
             color: white;
             background-color: #0a4275;
             font-weight: lighter;    }
@@ -38,9 +38,52 @@ a{
     }
   }
 
+/*extend*/
+
+
+
 
   .estilo_form{
     background-color: #0a4275;
     color: white;
   }
    
+  
+
+  .estilo_pag_alt{
+    @extend .estilo_form;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+
+/*mixing*/
+
+
+
+ @mixin tamanio($ancho, $altura, $bg_color) {
+  width: $ancho;
+  height: $altura;
+  background-color: $bg_color;
+ }
+
+ .fondo_registro_pag_alt{
+   @include tamanio(720px,250px,#0a4275)
+ }
+
+
+
+
+
+
+$mapa:(
+  facebook: #55acee,
+  mail: black
+) ;
+
+
+
+@each $nombre, $color in $mapa {
+  .boton-#{$nombre} {
+    color: $color;
+  }
+}
