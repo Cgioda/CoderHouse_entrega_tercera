@@ -1,3 +1,10 @@
+/*----SASS----*/
+$color1: #0a4275;
+
+$color2: #000000033;
+
+ 
+/*animacion*/
 section{
     border-radius: 5px;
     article{border-style: outset; text-align: center;
@@ -14,11 +21,14 @@ section{
 a{
     text-decoration: none;
         &:hover{
-            font-size: 18px;
+            background-color: $color1;   
             color: white;
-            background-color: #0a4275;
-            font-weight: lighter;    }
+            }
 }
+
+/*animacion*/
+
+
 
 
 .animacionTexto{
@@ -38,20 +48,24 @@ a{
     }
   }
 
+
+
+
+
 /*extend*/
 
 
 
 
-  .estilo_form{
-    background-color: #0a4275;
+  .estilo_general{
+    background-color: $color1;
     color: white;
   }
    
   
 
   .estilo_pag_alt{
-    @extend .estilo_form;
+    @extend .estilo_general;
     font-size: 20px;
     font-weight: lighter;
   }
@@ -67,7 +81,7 @@ a{
  }
 
  .fondo_registro_pag_alt{
-   @include tamanio(720px,250px,#0a4275)
+   @include tamanio(720px,250px,$color1)
  }
 
 
@@ -76,8 +90,8 @@ a{
 
 
 $mapa:(
-  facebook: #55acee,
-  mail: black
+  facebook: $color1,
+  mail: $color2
 ) ;
 
 
@@ -87,3 +101,4 @@ $mapa:(
     color: $color;
   }
 }
+

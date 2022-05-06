@@ -1,7 +1,6 @@
 {
-  "name": "desafioscss",
-  "version": "1.0.0",
-  "description": "",
+  "name": "coderhouse_penultima_entrega",
+  "version": "3.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +9,11 @@
     "type": "git",
     "url": "git+https://github.com/Cgioda/Entrega2_cg.git"
   },
-  "author": "",
+  "author": "Carlos_Gioda",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Cgioda/Entrega2_cg/issues"
   },
-  "homepage": "https://github.com/Cgioda/Entrega2_cg#readme"
+  "homepage": "https://github.com/Cgioda/Entrega2_cg#readme",
+  "description": "penultima_entrega_html_css_scss_seo_github"
 }
